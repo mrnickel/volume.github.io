@@ -1,0 +1,1221 @@
+/*******************************************************
+*
+*   COLORS
+*   Buttons: #00aced
+*   Text light: #eaeef1
+*   Text dark: #000000
+*   Background: #f0f0f0
+*   Footer Background: #ffffff
+*   Blue Line: #00aced
+*   Fonts: Gotham Book, Gotham Bold, Gotham Light, Gotham Thin
+*
+*******************************************************/
+
+
+/*******************************************************
+*    FONTS
+*******************************************************/
+
+@font-face {
+    font-family: GothamThin;
+    src: url("../fonts/Gotham-Thin.otf") format("opentype");
+}
+
+@font-face {
+    font-family: GothamLight;
+    src: url("../fonts/Gotham-Light.otf") format("opentype");
+}
+
+@font-face {
+    font-family: GothamBook;
+    src: url("../fonts/Gotham-Book.otf") format("opentype");
+}
+
+@font-face {
+    font-family: GothamBold;
+    src: url("../fonts/Gotham-Bold.otf") format("opentype");
+}
+
+/*******************************************************
+*    GLOBAL STYLES
+*******************************************************/
+
+* {
+
+}
+
+body {
+    background-color: #f0f0f0;
+    color: #000000;
+    font-family: GothamBook;
+}
+
+ul {
+    list-style: none;
+}
+
+hr {
+    border-top: 1px solid #00aced;
+}
+
+video {
+    border-radius: 7px;
+    max-height: 386px;
+}
+
+a {
+    color: #000000;
+}
+
+h1 {
+    color: #000000;
+    font-family: GothamBold;
+    font-size: 40px;
+    
+}
+
+h2 {
+    font-family: GothamBook;
+    font-size: 28px;
+
+}
+
+h3 {
+    font-family: GothamBook;
+    line-height: 1.45;
+}
+
+h4 {
+    font-family: GothamBold;
+}
+
+textarea {
+    resize: none;
+}
+
+.twitter-icon {
+    background: url("../img/twitter-glyphicon.svg");
+}
+
+.facebook-icon {
+    background: url("../img/facebook-glyphicon.svg");
+}
+
+
+.btn:hover, .btn:active, .btn:focus, .btn:visited {
+    background: #00aced;
+    border-color: #00aced;
+}
+
+.btn-lg {
+    width:474px;
+    height:79px;
+    font-size:33px;
+    position: relative;
+}
+
+    .btn-lg img{
+        position: absolute;
+        right:27px;
+    }
+
+    .btn-lg.glyph-phone span {
+        line-height: 59px;
+        font-family: GothamBold;
+    }
+
+    .btn-lg.glyph-phone img {
+        width: 32px;
+        height: 54px;
+        margin-top: 2px;
+    }
+
+    .btn-lg.glyph-paper span {
+        line-height: 59px;
+    }
+
+    .btn-lg.glyph-paper img {
+        width: 30px;
+        height: 39px;
+        margin-top:9px;
+    }
+
+.btn-md {
+     width:224px;
+     height:41px;
+    font-family: GothamBold;
+}
+
+.btn-nav-menu {
+    width:100%;
+    height:79px;
+    font-size:33px;
+    font-family: GothamBold;
+    border-radius: 6px;
+    line-height: 59px;
+}
+
+/*RESPONSIVE CENTERED COLUMNS*/
+.row-centered {
+    text-align:center;
+}
+
+.col-centered {
+    display:inline-block;
+    float:none;
+    text-align:left;
+}
+
+/*******************************************************
+*    BOOTSTRAP OVERWRITES
+*******************************************************/
+
+:focus {
+    outline:none;
+}
+
+.btn {
+    background: #00aced;
+    border-color: #00aced;
+    font-family: GothamBold;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary:active:focus, .open .dropdown-toggle.btn-primary {
+    background-color: #333;
+    border-color: #333;
+     -webkit-box-shadow: none;
+     box-shadow: none;
+    outline:none;
+}
+
+.jumbotron {
+    border-radius: 0px !important;
+}
+
+.jumbotron h1,
+.jumbotron .h1 {
+    font-size: 60px;
+}
+
+.navbar-brand {
+    height:auto;
+}
+
+.navbar-toggle {
+    float:none;
+}
+
+/*******************************************************
+*    HEADER STYLES
+*******************************************************/
+
+.navbar {
+    min-height: 153px;
+    font-size: 17.5px;
+}
+
+    .navbar .navbar-brand {
+        margin-top: 20px;
+    }
+
+    .navbar .navbar-nav {
+        margin-top:40px;
+    }
+
+
+    .navbar .navbar-nav .btn-nav {
+        width:98px;
+        height:39px;
+    }
+
+    .navbar-nav li a {
+        color: #000000;
+        margin-right: 25px;
+        border-radius: 5px;
+        font-family: GothamLight;
+        padding: 10px 12px;
+        text-align: center;
+        font-weight: 600;
+    }
+
+    .navbar-nav .login a {
+        margin-right: 0;
+        background-color: #00aced;
+        color:#eaeef1;
+        width: 100px;
+    }
+
+    .navbar-nav .login a:hover {
+        color:#000;
+    }
+
+    .nav > li > a:hover,
+    .nav > li > a:focus {
+        background-color: #e4e4e4;
+    }
+
+    .navbar .nav-icon {
+        margin-top: 10px;
+        background-size: contain;
+        width:23px;
+        height:23px;
+        display: inline-block;
+    }
+
+    .navbar .nav-icon:first-child {
+        margin-right:8px;
+    }
+
+
+        .navbar .nav-icon a {
+            display:block;
+            width:100%;
+            height:100%;
+        }
+
+.navbar-header-mobile {
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+
+@media (max-width: 1199px) {
+    .navbar-nav li a {
+        margin-right: 5px;
+        font-size:16px;
+    }
+}
+
+@media (max-width: 991px) {
+
+    .navbar .navbar-nav {
+        margin-top: 0px;
+    }
+}
+
+@media (max-width: 767px) {
+    .navbar-nav li a {
+        margin-right: 0px;
+    }
+
+    .navbar-nav .login a {
+        width:100%;
+    }
+}
+
+@media (max-width : 480px) {
+    .navbar-header-mobile {
+        margin-bottom: 20px;
+    }
+}
+/*******************************************************
+*    FOOTER STYLES
+*******************************************************/
+
+.footer.container-fluid {
+    padding-left:0;
+    padding-right:0;
+}
+
+.footer .footer-icon {
+    background-size: contain;
+    width:32px;
+    height:32px;
+}
+
+.footer .footer-icon {
+    margin-left:11px;
+}
+
+.footer .container-right {
+    position: relative;
+}
+
+.footer .footer-bg {
+    background: #fff;
+}
+
+.footer .footer-content {
+    border: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    margin-bottom: 48px;
+    padding: 65px 15px;
+}
+
+.footer .table-container table{
+    width:100%;
+}
+
+.footer .col-left {
+    width:200px;
+}
+.footer .col-mid {
+    width:300px;
+}
+
+.footer .footer-icon a {
+    display:block;
+    width:100%;
+    height:100%;
+}
+
+.footer-copyright {
+    padding: 0 19px;
+    font-family: GothamLight;
+}
+
+.footer-contact-container {
+    margin-top:40px;
+}
+
+.footer .footer-contact-container  h2 {
+    margin-top:0;
+}
+
+.footer .social-icons {
+    margin-top: 40px;
+    text-align: right;
+}
+
+.footer .factor {
+    text-align: center;
+    max-width:460px;
+}
+
+.footer .factor-logo,
+.footer .canada-logo {
+    margin-bottom: 30px;
+    /*margin:0 37px;*/
+    text-align: center;
+}
+
+.footer .acknowledgement {
+    text-align: center;
+    font-size: 9px;
+    margin-bottom: 30px;
+    max-width:460px;
+}
+
+
+@media (max-width: 992px) {
+    .footer .container-right {
+        padding:0;
+    }
+
+    .footer .footer-content .row {
+        padding:0 10%;
+    }
+
+    .footer .table-container table{
+        width:auto;
+    }
+}
+
+@media (max-width : 480px) {
+
+    .footer .footer-content a {
+        font-size:12px;
+    }
+
+    .footer .footer-contact-container h2 {
+        font-size: 18px;
+    }
+
+    .footer .footer-content table td {
+        vertical-align: top;
+        padding-bottom: 5px;
+    }
+}
+
+
+/*******************************************************
+*    MAIN PAGE STYLES
+*******************************************************/
+
+#home .content {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+#home .landing {
+    background: url("../img/direct-bg.jpg") no-repeat;
+    width:100%;
+    min-height:569px;
+    color:#eaeef1;
+    background-position: center;
+    background-size:cover;
+}
+
+    #home .landing .power-text {
+        margin-bottom: 70px;
+    }
+
+#home .reward-fans {
+    min-height:494px;
+    padding: 65px 0px;
+    overflow: hidden;
+}
+
+#home .jumbotron h1{
+    max-width:750px;
+}
+#home .jumbotron h3{
+    max-width:650px;
+}
+
+    .reward-fans .info-container {
+        padding-left:60px;
+    }
+
+    .reward-fans h1{
+        font-size: 60px;
+        margin-top:0px;
+    }
+
+    .reward-fans .reward-text {
+        margin-bottom: 32px;
+    }
+
+#home .install-app {
+    background: url("../img/fans-install-bg.jpg");
+    width:100%;
+    height:569px;
+    color:#eaeef1;
+    background-position: center;
+    background-size:cover;
+}
+
+    #home .install-app .power-text {
+        margin-bottom: 70px;
+    }
+
+    #home .press {
+    padding-top:110px;
+    padding-bottom:135px;
+}
+
+#home .press .press-item img {
+    margin-bottom: 20px;
+}
+
+#home .press .press-item span {
+    font-size: 18px;
+    font-family: GothamLight;
+}
+#home .contact {
+    background: url("../img/contact-bg.jpg");
+    width:100%;
+    height:400px;
+    color:#eaeef1;
+    background-position: center;
+    background-size:cover;
+}
+#home .cafe {
+    background: url("../img/cafe-bg.jpg");
+    width:100%;
+    min-height:569px;
+    color:#eaeef1;
+    background-position: center;
+    background-size:cover;
+}
+
+#home .container .glyph-phone {
+    margin-top: 10px;
+}
+
+@media (max-width: 1336px) {
+    #home .reward-fans .info-container {
+        padding-left:30px;
+    }
+}
+
+@media (max-width: 992px) {
+    #home .reward-fans {
+        padding-left:0px;
+        padding-right:0px;
+        text-align: center;
+    }
+
+    #home .reward-fans .info-container {
+        padding-left:0px;
+    }
+
+    #home .press {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    #home .press :first-child {
+        margin-bottom: 100px;
+    }
+
+    #home .press .press-item img {
+        width: 90%;
+    }
+
+    .jumbotron p img {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    #home .jumbotron {
+        text-align: center;
+    }
+
+    #home .reward-fans {
+        padding: 65px 0px;
+    }
+
+    #home .jumbotron h1,
+    #home .reward-fans h1 {
+        font-size: 50px;
+    }
+
+    .btn_view_artists .btn_contact_us {
+        width: 100%;
+        height: 79px;
+        font-size: 26px;
+        position: relative;
+    }
+
+    #home .press {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    #home .press .press-item img {
+        width: 90%;
+    }
+
+    .jumbotron p img {
+        display: none;
+    }
+}
+
+/* Extra Small Devices, Phones */
+@media (max-width : 480px) {
+
+    #home .jumbotron .container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #home .jumbotron h1,
+    #home .reward-fans h1 {
+        font-size: 36px;
+    }
+    #home .jumbotron h2,
+    #home .reward-fans h2 {
+        font-size: 26px;
+    }
+
+    #home .reward-fans {
+        padding-top: 0px;
+        padding-bottom: 30px;
+    }
+
+    #home .reward-fans .info-container {
+        padding: 0 15px;
+    }
+
+    #home .install-app .power-text {
+        margin-bottom: 20px;
+    }
+
+    .btn-lg {
+        width: 100%;
+        height: 79px;
+        font-size: 26px;
+        position: relative;
+    }
+    
+    .btn-lg img {
+        display: none;
+    }
+
+    #home .press {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    #home .press .press-item img {
+        width: 90%;
+    }
+
+    .jumbotron p img {
+        display: none;
+    }
+}
+
+
+/*******************************************************
+*    SOLUTIONS PAGE STYLES
+*******************************************************/
+
+#solutions .content {
+    margin-bottom:70px;
+}
+#solutions .solutions-content {
+    margin-top: 100px;
+}
+#solutions .content .col {
+    min-width: 390px;
+    margin-bottom: 50px;
+}
+
+#solutions .content .col-img {
+    margin-bottom:50px;
+}
+
+#solutions .content h2 {
+    min-height:135px;
+    max-width:335px;
+    font-size:36px;
+}
+
+@media (max-width : 480px) {
+    #solutions .solutions-content {
+        margin-top: 50px;
+    }
+
+    #solutions .content .col {
+        min-width: 0;
+        margin-bottom: 50px;
+    }
+
+    #solutions .content .col-img {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    #solutions .content h2 {
+        min-height: 0;
+        margin-bottom: 30px;
+    }
+
+    #solutions .content h1 {
+        font-size:45px;
+    }
+}
+
+#solutions .btn-md {
+    min-height: 0;
+    padding: 12px;
+}
+
+/*******************************************************
+*    CONTACT PAGE STYLES
+*******************************************************/
+
+#contact .btn-form {
+    margin-top:15px;
+    width:100%;
+    height:54px;
+    font-size:26px;
+}
+
+#contact .content {
+    margin-bottom:70px;
+}
+
+#contact-form label {
+    font-size:18px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+#contact #map-canvas {
+    width: 100%;
+    height: 368px;
+    margin-top:50px;
+}
+
+#contact .form-control {
+    height: 46px;
+}
+
+#contact #message {
+    height: 360px;
+}
+
+#contact .hiring {
+    margin-top: 50px;
+}
+
+#contact .hiring ul {
+    padding:0;
+    font-size: 18px;
+}
+
+#contact #contact-form .title p {
+    text-align: left;
+    font-size: 16px;
+    padding-left: 15px;
+}
+
+#contact #contact-form .title h1 {
+    padding-left: 12px;
+}
+
+@media (max-width: 992px) {
+
+    
+    #contact .content {
+    max-width: 90%;
+    }
+
+    #contact #contact-form .title h1 {
+        text-align: center;
+        font-size: 50px;
+    }
+
+     #contact #contact-form .title p {
+        text-align: center;
+    }
+
+    #contact #map-canvas {
+        margin-bottom:50px;
+        height:483px;
+    }
+}
+
+@media (max-width: 768px) {
+    #contact .content > .row {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    #contact .btn-form {
+        font-size: 20px;
+    }
+
+}
+
+/*******************************************************
+*    OFFERS PAGE STYLES
+*******************************************************/
+
+#offers {
+    background-color: #fff;
+}
+
+#offers .content h1 {
+    font-size:56px;
+}
+
+#offers .content h2 {
+    font-size:30px;
+    margin: 0px;
+}
+
+#offers .content span {
+    font-size:28px;
+}
+
+#offers .media {
+    padding-left:100px;
+    padding-right:100px;
+    margin-top:0px;
+}
+
+#offers .media .media-body {
+    padding-left:35px;
+}
+
+#offers .content {
+    margin-bottom:70px;
+}
+
+#offers .content .row {
+    padding-top:50px;
+}
+
+#offers .content .row.landing {
+    padding-top:0px;
+    margin-bottom:100px;
+}
+
+#offers .content .col-content {
+
+}
+
+#offers .content .row:nth-child(even) {
+    background-color:#f0f0f0;
+}
+
+#offers .content .col-img {
+    min-width:390px;
+}
+
+#offers .media .media-mobile {
+    display: none;
+}
+
+@media (max-width: 992px) {
+
+    #offers .media {
+        padding-left:0px;
+        padding-right:0px
+    }
+
+    #offers .media h1 {
+        font-size:34px;
+    }
+
+    #offers .media span {
+        font-size:24px;
+    }
+
+    #offers .media-object {
+        width:250px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width : 480px) {
+    #offers .content .row {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    #offers .row.media {
+        padding-bottom: 50px;
+    }
+
+    #offers .media .media-body {
+        padding-left: 0px;
+        padding-right: 0px;
+        text-align: center;
+    }
+    #offers .media .media-mobile {
+        display: block;
+    }
+
+    #offers .media-object {
+        display: none;
+    }
+
+    #offers .content {
+        margin-bottom: 30px;
+    }
+
+}
+/*******************************************************
+*    PARTNERS PAGE STYLES
+*******************************************************/
+#partners .content.container {
+    max-width: 1200px;
+}
+
+#partners .btn-sm {
+    flex:auto;
+    height:27px;
+    font-size:14px;
+    line-height: 17px;
+}
+
+#partners .btn-md {
+    flex:auto;
+    height:34px;
+    font-size:16px;
+    line-height: 22px;
+}
+
+#partners .btn-lg {
+    width:288px;
+    height:67px;
+    font-size:18px;
+    line-height: 47px;
+}
+
+#partners .content {
+    padding:0 0px;
+}
+
+#partners .platforms {
+    width:74px;
+    height:34px;
+    background: url("../img/platform-icons.png");
+}
+
+/* 4 COLUMN LAYOUT*/
+
+#partners .col-4-layout .platforms {
+    width:57px;
+    height:27px;
+    background: url("../img/platform-icons.png");
+    background-size: contain;
+    margin-right: 9px;
+}
+
+#partners .col-4-layout .item {
+    margin-bottom:50px;
+}
+
+#partners .col-4-layout .item h3 {
+    font-size:25px;
+    font-family: GothamBold;
+}
+
+#partners .col-4-layout .item .item-img img {
+    width: 100%;
+    height:auto;
+}
+
+#partners .col-4-layout .item .item-btn {
+    margin-bottom: 10px;
+}
+
+#partners .col-4-layout .item .item-btn .platforms {
+    margin-right:9px;
+}
+
+#partners .col-4-layout .item .item-text {
+    margin-bottom: 4px;
+    font-size:14px;
+}
+
+/* 3 COLUMN LAYOUT */
+
+#partners .col-3-layout .item {
+    margin-bottom:50px;
+}
+
+#partners .col-4-layout .item .item-img {
+    margin-bottom: 4px;
+}
+
+#partners .col-3-layout .item .item-img img {
+    width: 100%;
+    height:auto;
+}
+
+#partners .col-3-layout .item .item-text {
+    margin-bottom: 4px;
+    font-size:16px;
+    display:block;
+}
+
+.item-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+#partners .col-3-layout .item .platforms {
+    flex:0 0 74px;
+    margin-right:9px;
+}
+
+#partners .col-3-layout .item h3 {
+    font-size:25px;
+    font-family: GothamBold;
+}
+
+#partners .col-3-layout .item .item-img {
+    margin-bottom: 4px;
+    border-radius: 6px; 
+        -moz-border-radius: 6px; 
+        -webkit-border-radius: 6px; 
+        border: 0px solid #800000;
+}
+
+#partners .col-3-layout .item .item-btn {
+    margin-bottom: 22px;
+    overflow:hidden;
+}
+
+
+/* 2 COLUMN LAYOUT*/
+
+#partners .col-2-layout .item {
+    width:584px;
+    margin-bottom:50px
+}
+
+#partners .col-2-layout .item:first-child {
+    float:left;
+}
+#partners .col-2-layout .item:last-child {
+    float:right;
+}
+
+#partners .col-2-layout .item h2 {
+    font-family: GothamBold;
+}
+
+#partners .col-2-layout .item .item-text-large {
+    margin-top:7px;
+}
+
+#partners .col-2-layout .item .item-text-large h2 {
+    display:inline;
+    line-height: 52px;
+}
+
+#partners .col-2-layout .item .item-text {
+    margin-bottom: 20px;
+    font-size:18px;
+}
+
+#partners .companies h1{
+    font-size:56px;
+}
+
+#partners .companies-list li{
+    margin: 25px 30px;
+}
+
+@media (max-width: 1200px) {
+    #partners .col-2-layout .item:first-child {
+        float:none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #partners .col-2-layout .item:last-child {
+        float:none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 992px) {
+    #partners .col-2-layout,
+    #partners .col-3-layout,
+    #partners .col-4-layout,
+    #partners .companies {
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right:0;
+        margin-left:0;
+    }
+
+    #partners .col-3-layout .item {
+        margin-left: auto;
+        margin-right: auto;
+    }    
+}
+
+@media (max-width: 768px) {
+    #partners .col-2-layout,
+    #partners .col-3-layout,
+    #partners .col-4-layout,
+    #partners .companies {
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right:0;
+        margin-left:0;
+    }
+
+    #partners .col-3-layout .item{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* Extra Small Devices, Phones */
+@media (max-width : 480px) {
+    #partners .col-2-layout,
+    #partners .col-3-layout,
+    #partners .col-4-layout,
+    #partners .companies {
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right:0;
+        margin-left:0;
+    }
+
+    #partners .col-2-layout .item {
+        width: 100%;
+        padding:0;
+    }
+
+    #partners .item-img img {
+        width:100%
+    }
+
+    #partners .companies h1 {
+        font-size: 46px;
+    }
+
+    #partners .btn-lg {
+        width:100%;
+    }
+}
+
+
+/********************************************************
+*    ABOUT PAGE STYLES
+*******************************************************/
+#about .mission-statement {
+    margin-bottom: 96px;
+    max-width: 850px;
+}
+
+#about .mission-statement h1 {
+    font-family: GothamThin;
+    font-size:53px;
+    margin-bottom:70px;
+}
+
+#about .mission-statement h2 {
+    font-family: GothamThin;
+    font-size:38px;
+}
+
+#about .row-title {
+    margin-bottom: 62px;
+}
+
+#about .item {
+    margin-bottom: 65px;
+}
+
+#about h1 {
+    font-size:50px;
+}
+
+#about .name {
+    font-size:26px;
+    font-family: GothamBold;
+}
+
+#about .role {
+    font-size:26px;
+    font-family: GothamBook;
+}
+
+#about .board {
+    margin-top:35px;
+}
+
+@media (max-width: 480px) {
+    #about .mission-statement {
+        margin-bottom: 40px;
+        max-width: 480px;
+    }
+
+    #about .row {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    #about .mission-statement h1 {
+        font-size: 45px;
+        margin-bottom: 50px;
+    }
+
+    #about .row-title {
+        margin-bottom: 50px;
+    }
+
+    #about .item {
+        margin-bottom: 50px;
+    }
+}
